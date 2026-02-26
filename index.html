@@ -23,7 +23,7 @@
         </div>
 
         <div
-          class="z-0 flex md:flex-row flex-col md:justify-evenly xl:justify-evenly w-full absolute md:static top-22 right-0 bg-[var(---lightgreen)] md:bg-transparent xl:bg-transparent p-4 py-20 md:p-0 xl:p-0 rounded-xl md:rounded-none xl:rounded-none gap-8 md:gap-auto xl:gap-auto transform-[translatey(-150%)] md:transform-none xl:transform-none transition-all duration-700 mobileMenu">
+          class="z-0 flex h-max md:flex-row flex-col md:justify-evenly xl:justify-evenly w-full absolute md:static top-22 right-0 bg-[var(---lightgreen)] md:bg-transparent xl:bg-transparent p-4 py-20 md:p-0 xl:p-0 rounded-xl md:rounded-none xl:rounded-none gap-8 md:gap-auto xl:gap-auto transform-[translatey(-150%)] md:transform-none xl:transform-none transition-all duration-700 mobileMenu">
           <!-- searchbar -->
           <div
             class="flex items-center border border-[var(---green)] text-[var(---darkgreen)] rounded-full md:w-max xl:w-max w-full md:px-4 xl:px-4 px-2 py-2 gap-2">
@@ -35,23 +35,27 @@
             <button class="cursor-pointer">Search</button>
           </div>
           <!-- buttons -->
-          <div class="flex flex-col md:flex-row xl:flex-row gap-2 text-[var(---green)] text-lg">
-            <span
-              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
-              ><i class="fas fa-filter"></i> Categories</span
-            >
-            <span
-              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
-              ><i class="fa-regular fa-user"></i> sign in</span
-            >
-            <span
-              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
-              ><i class="fas fa-shopping-cart"></i>Cart</span
-            >
-            <span
-              class="flex items-center gap-2 cursor-pointer px-4 py-1 bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300 shadow-lg"
-              ><i class="fa-regular fa-user"></i>Creat Account</span
-            >
+          <div
+            class="flex flex-col md:flex-row xl:flex-row md:gap-2 xl:gap-2 gap-4 text-[var(---green)] text-lg">
+            <button
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
+              <i class="fas fa-filter"></i> Categories
+            </button>
+
+            <button
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
+              <i class="fa-regular fa-user"></i> sign in
+            </button>
+
+            <button
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
+              <i class="fas fa-shopping-cart"></i>Cart
+            </button>
+
+            <button
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300 shadow-lg">
+              <i class="fa-regular fa-user"></i>Creat Account
+            </button>
           </div>
         </div>
         <!-- showmenue -->
