@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>www.SumaMarket.com</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-screen bg-gradient-to-b from-white via-[var(---lightgreen)] to-white overflow-hidden">
+      <!-- navbar -->
+      <nav
+        class="flex justify-between items-center px-8 py-4 fixed top-4 left-4 right-4 shadow-xl backdrop-blur-sm rounded-full bg-[var(---lightgreen)]/50 z-50">
+        <div class="font-bold text-2xl text-[var(---green)] select-none">BoxMarket.com</div>
+        <div
+          class="flex items-center border border-[var(---green)] text-[var(---darkgreen)] rounded-full w-max px-4 py-2 gap-2">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            placeholder="What are you looking for..."
+            class="w-full outline-none pr-6" />
+          <button class="cursor-pointer">Search</button>
+        </div>
+        <div class="flex gap-2 text-[var(---green)] text-lg">
+          <span
+            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
+            ><i class="fas fa-filter"></i> Categories</span
+          >
+          <span
+            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
+            ><i class="fa-regular fa-user"></i> sign in</span
+          >
+          <span
+            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
+            ><i class="fas fa-shopping-cart"></i>Cart</span
+          >
+          <span
+            class="flex items-center gap-2 cursor-pointer px-4 py-1 bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300 shadow-lg"
+            ><i class="fa-regular fa-user"></i>Creat Account</span
+          >
+        </div>
+      </nav>
+      <!-- hero section -->
+      <section class="w-full h-full py-40 px-24 flex gap-20">
+        <div class="flex flex-col gap-4 max-w-1/2">
+          <h1 class="text-6xl font-bold text-[var(---green)] mb-6">Welcome to BoxMarket.com</h1>
+          <p class="text-xl text-[var(---darkgreen)] mb-8">
+            Your one-stop shop for all your needs. Discover a wide range of products at unbeatable
+            prices.
+          </p>
+          <button
+            class="px-6 py-3 bg-[var(---green)] text-[var(---darkgreen)] rounded-full w-max font-semibold hover:bg-[var(---lightgreen)] transition-all duration-300">
+            Shop Now
+          </button>
+        </div>
+
+        <!-- product slider -->
+        <div
+          class="flex justify-center overflow-x-scroll items-center w-[440px] h-full px-14 flex-col">
+          <!-- slider -->
+          <div
+            class="w-[440px] h-full rounded-xl flex flex-nowrap gap-4 animate-[slide_20s_1s_linear_infinite] hover:[animation-play-state:paused]">
+            <article
+              class="w-[440px] h-full bg-white flex justify-center items-center rounded-md relative shrink-0">
+              <img
+                src="./images/apple.png"
+                alt="apple"
+                class="w-full h-full object-cover rounded-md" />
+              <span
+                class="absolute bottom-0 left-0 p-4 px-8 rounded-md gap-2 bg-black/70 text-white flex flex-col text-center">
+                <h1 class="text-xl">Fresh Apple</h1>
+                <ins class="text-[var(---green)]">$2.99</ins>
+                <button class="flex items-center gap-2 px-4 py-1 bg-[var(---orange)] rounded-full">
+                  <i class="fas fa-shopping-cart"></i> add to cart
+                </button>
+              </span>
+            </article>
+
+            <article
+              class="w-[440px] h-full bg-white flex justify-center items-center rounded-md relative shrink-0">
+              <img
+                src="./images/watch.png"
+                alt="watch"
+                class="w-full h-full object-cover rounded-md" />
+              <span
+                class="absolute bottom-0 left-0 p-4 px-8 rounded-md gap-2 bg-black/70 text-white flex flex-col text-center">
+                <h1 class="text-xl">Ultra watch</h1>
+                <ins class="text-[var(---green)]">$20.99</ins>
+                <button class="flex items-center gap-2 px-4 py-1 bg-[var(---orange)] rounded-full">
+                  <i class="fas fa-shopping-cart"></i> add to cart
+                </button>
+              </span>
+            </article>
+
+            <article
+              class="w-[440px] h-full bg-white flex justify-center items-center rounded-md relative shrink-0">
+              <img
+                src="./images/date.png"
+                alt="date"
+                class="w-full h-full object-cover rounded-md" />
+              <span
+                class="absolute bottom-0 left-0 p-4 px-8 rounded-md gap-2 bg-black/70 text-white flex flex-col text-center">
+                <h1 class="text-xl">Fresh Date</h1>
+                <ins class="text-[var(---green)]">$0.99</ins>
+                <button class="flex items-center gap-2 px-4 py-1 bg-[var(---orange)] rounded-full">
+                  <i class="fas fa-shopping-cart"></i> add to cart
+                </button>
+              </span>
+            </article>
+            <article
+              class="w-[440px] h-full bg-white flex justify-center items-center rounded-md relative shrink-0">
+              <img
+                src="./images/headphone.png"
+                alt="headphone"
+                class="w-full h-full object-cover rounded-md" />
+              <span
+                class="absolute bottom-0 left-0 p-4 px-8 rounded-md gap-2 bg-black/70 text-white flex flex-col text-center">
+                <h1 class="text-xl">Wireless Headphone</h1>
+                <ins class="text-[var(---green)]">$12.99</ins>
+                <button class="flex items-center gap-2 px-4 py-1 bg-[var(---orange)] rounded-full">
+                  <i class="fas fa-shopping-cart"></i> add to cart
+                </button>
+              </span>
+            </article>
+          </div>
+        </div>
+
+        <i class="fas fa-chevron-down absolute bottom-12 left-1/2 animate-bounce text-xl"></i>
+      </section>
+    </header>
+
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
