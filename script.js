@@ -1,3 +1,5 @@
+alert("hello my friends this is the begining");
+
 const mobileMenu = document.querySelector(".mobileMenu");
 const showMenuBtn = document.querySelector(".mobileMenuBtn");
 showMenuBtn.addEventListener("click", () => {
