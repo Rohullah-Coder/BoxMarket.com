@@ -18,39 +18,56 @@
       <!-- navbar -->
       <nav
         class="flex justify-between items-center px-8 py-4 fixed top-4 left-4 right-4 shadow-xl backdrop-blur-sm rounded-full bg-[var(---lightgreen)]/50 z-50">
-        <div class="font-bold text-2xl text-[var(---green)] select-none">BoxMarket.com</div>
-        <div
-          class="flex items-center border border-[var(---green)] text-[var(---darkgreen)] rounded-full w-max px-4 py-2 gap-2">
-          <i class="fas fa-search"></i>
-          <input
-            type="text"
-            placeholder="What are you looking for..."
-            class="w-full outline-none pr-6" />
-          <button class="cursor-pointer">Search</button>
+        <div class="md:font-bold md:text-2xl text-xl text-[var(---green)] select-none">
+          BoxMarket.com
         </div>
-        <div class="flex gap-2 text-[var(---green)] text-lg">
-          <span
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
-            ><i class="fas fa-filter"></i> Categories</span
-          >
-          <span
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
-            ><i class="fa-regular fa-user"></i> sign in</span
-          >
-          <span
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
-            ><i class="fas fa-shopping-cart"></i>Cart</span
-          >
-          <span
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300 shadow-lg"
-            ><i class="fa-regular fa-user"></i>Creat Account</span
-          >
+
+        <div
+          class="z-0 flex md:flex-row flex-col md:justify-evenly xl:justify-evenly w-full absolute md:static top-18 right-0 bg-[var(---lightgreen)] md:bg-transparent xl:bg-transparent p-4 md:p-0 xl:p-0 rounded-xl md:rounded-none xl:rounded-none gap-8 md:gap-auto xl:gap-auto transform-[translatey(-150%)] md:transform-none xl:transform-none transition-all duration-700 mobileMenu">
+          <!-- searchbar -->
+          <div
+            class="flex items-center border border-[var(---green)] text-[var(---darkgreen)] rounded-full md:w-max xl:w-max w-full md:px-4 xl:px-4 px-2 py-2 gap-2">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="What do you look for..."
+              class="w-full outline-none md:pr-6 xl:pr-8 p-0" />
+            <button class="cursor-pointer">Search</button>
+          </div>
+          <!-- buttons -->
+          <div class="flex flex-col md:flex-row xl:flex-row gap-2 text-[var(---green)] text-lg">
+            <span
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
+              ><i class="fas fa-filter"></i> Categories</span
+            >
+            <span
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
+              ><i class="fa-regular fa-user"></i> sign in</span
+            >
+            <span
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300"
+              ><i class="fas fa-shopping-cart"></i>Cart</span
+            >
+            <span
+              class="flex items-center gap-2 cursor-pointer px-4 py-1 bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300 shadow-lg"
+              ><i class="fa-regular fa-user"></i>Creat Account</span
+            >
+          </div>
+        </div>
+        <!-- showmenue -->
+        <div
+          class="flex justify-center items-center p-2 md:hidden xl:hidden bg-white rounded-full mobileMenuBtn transition-all duration-700">
+          <i class="fas fa-chevron-down"></i>
         </div>
       </nav>
+
       <!-- hero section -->
-      <section class="w-full h-full py-40 px-24 flex gap-20">
-        <div class="flex flex-col gap-4 max-w-1/2">
-          <h1 class="text-6xl font-bold text-[var(---green)] mb-6">Welcome to BoxMarket.com</h1>
+      <section
+        class="w-full h-full md:py-40 md:px-24 xl:py-40 xl:px-24 px-10 py-28 flex md:flex-row xl:flex-row flex-col md:gap-20 xl:gap-20 gap-8">
+        <div class="flex flex-col md:gap-4 xl:gap-4 md:max-w-1/2 xl:max-w-1/2">
+          <h1 class="md:text-6xl xl:text-6xl text-4xl font-bold text-[var(---green)] mb-6">
+            Welcome to BoxMarket.com
+          </h1>
           <p class="text-xl text-[var(---darkgreen)] mb-8">
             Your one-stop shop for all your needs. Discover a wide range of products at unbeatable
             prices.
@@ -63,7 +80,7 @@
 
         <!-- product slider -->
         <div
-          class="flex justify-center overflow-x-scroll items-center w-[440px] h-full px-14 flex-col">
+          class="flex justify-center overflow-x-scroll items-center md:w-[440px] xl:w-[440px] h-full px-14 flex-col">
           <!-- slider -->
           <div
             class="w-[440px] h-full rounded-xl flex flex-nowrap gap-4 animate-[slide_20s_1s_linear_infinite] hover:[animation-play-state:paused]">
