@@ -12,7 +12,7 @@
     <script src="./script.js" defer></script>
     <title>www.BoxMarket.com</title>
   </head>
-  <body>
+  <body class="bg-[url('./images/background-blur.png')] bg-fixed">
     <!-- loader -->
     <section
       class="absolute w-full h-screen bg-[var(---lightgreen)] flex justify-center items-center z-60 loader">
@@ -33,66 +33,62 @@
         </div>
       </div>
     </section>
-    <header
-      class="w-full h-screen bg-gradient-to-b from-white via-[var(---lightgreen)] to-white overflow-hidden">
-      <!-- navbar -->
+    <nav
+      class="flex justify-between items-center px-8 md:py-4 xl:py-4 py-2 fixed top-4 left-4 right-4 shadow-xl backdrop-blur-sm rounded-full bg-[var(---lightgreen)]/50 z-50">
+      <div class="md:font-bold md:text-2xl text-2xl font-bold text-[var(---darkGreen)] select-none">
+        BoxMarket.com
+      </div>
+
+      <div
+        class="md:flex xl:flex hidden items-center border border-[var(---darkGreen)] text-[var(---darkGreen)] bg-[var(---lightgreen)] rounded-full w-auto md:w-max xl:w-max px-4 py-2 gap-2">
+        <input type="text" placeholder="What do you look for..." class="w-full outline-none pr-6" />
+
+        <i class="fas fa-search text-2xl md:text-sm xl:text-sm"></i>
+      </div>
+
+      <!-- computer nav -->
       <nav
-        class="flex justify-between items-center px-8 md:py-4 xl:py-4 py-2 fixed top-4 left-4 right-4 shadow-xl backdrop-blur-sm rounded-full bg-[var(---lightgreen)]/50 z-50">
-        <div class="md:font-bold md:text-2xl text-2xl font-bold text-[var(---green)] select-none">
-          BoxMarket.com
-        </div>
-
-        <div
-          class="md:flex xl:flex hidden items-center border border-[var(---green)] text-[var(---darkgreen)] bg-[var(---lightgreen)] rounded-full w-auto md:w-max xl:w-max px-4 py-2 gap-2">
-          <input
-            type="text"
-            placeholder="What do you look for..."
-            class="w-full outline-none pr-6" />
-
-          <i class="fas fa-search text-2xl md:text-sm xl:text-sm"></i>
-        </div>
-
-        <!-- computer nav -->
-        <nav
-          class="md:flex xl:flex hidden flex-col md:flex-row xl:flex-row md:gap-2 xl:gap-2 gap-4 text-[var(---green)] text-lg">
-          <button
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
-            <i class="fa-regular fa-home"></i> Home
-          </button>
-
-          <button
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
-            <a href="#products">Products</a>
-          </button>
-          <button
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
-            <i class="fa-regular fa-bell"></i> Notifications
-          </button>
-
-          <button
-            class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
-            <i class="fa-regular fa-heart"></i>Favorites
-          </button>
-
-          <a href="./htmls/dashBoard.html">
-            <button
-              class="flex items-center gap-2 cursor-pointer px-4 py-1 bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300 shadow-lg">
-              <i class="fa-regular fa-user"></i>Account
-            </button>
-          </a>
-          <button
-            class="flex px-4 items-center justify-center hover:text-[var(---orange)] duration-150 cursor-pointer">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </nav>
-
-        <!-- showmenue -->
+        class="md:flex xl:flex hidden flex-col md:flex-row xl:flex-row md:gap-2 xl:gap-2 gap-4 text-[var(---darkGreen)] text-lg">
         <button
-          class="flex cursor-pointer justify-center items-center p-4 md:hidden xl:hidden bg-white rounded-full burgerBtn transition-all duration-700">
-          <i class="fas fa-bars transition-all duration-700"></i>
+          class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
+          <i class="fa-regular fa-home"></i> Home
+        </button>
+
+        <button
+          class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
+          <a href="#products">Products</a>
+        </button>
+        <button
+          class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
+          <i class="fa-regular fa-bell"></i> Notifications
+        </button>
+
+        <button
+          class="flex items-center gap-2 cursor-pointer px-4 py-1 hover:bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300">
+          <i class="fa-regular fa-heart"></i>Favorites
+        </button>
+
+        <a href="./htmls/dashBoard.html">
+          <button
+            class="flex items-center gap-2 cursor-pointer px-4 py-1 bg-[var(---lightgreen)] hover:text-[var(---orange)] rounded-full transition-all duration-300 shadow-lg">
+            <i class="fa-regular fa-user"></i>Account
+          </button>
+        </a>
+        <button
+          class="flex px-4 items-center justify-center hover:text-[var(---orange)] duration-150 cursor-pointer">
+          <i class="fas fa-shopping-cart"></i>
         </button>
       </nav>
 
+      <!-- showmenue -->
+      <button
+        class="flex cursor-pointer justify-center items-center p-4 md:hidden xl:hidden bg-white rounded-full burgerBtn transition-all duration-700">
+        <i class="fas fa-bars transition-all duration-700"></i>
+      </button>
+    </nav>
+    <header
+      class="w-full h-screen bg-cover bg-[var(---lightgreen)]/30 backdrop-blur-md overflow-hidden">
+      <!-- navbar -->
       <!-- burger menu detail -->
       <div
         class="fixed md:hidden xl:hidden top-24 right-8 rounded-xl backdrop-blur-sm bg-[var(---lightgreen)] p-4 burgerfullmnu translate-x-60 transition-all duration-700">
@@ -107,7 +103,6 @@
           </li>
         </ul>
       </div>
-
       <!-- mobile menue -->
       <div
         class="flex md:hidden xl:hidden gap-2 text-[var(---green)] fixed bottom-0 left-0 right-0 py-4 text-xl z-50">
@@ -143,7 +138,7 @@
         class="w-full h-full md:py-40 md:px-24 xl:py-20 xl:px-24 px-10 py-28 flex md:flex-row xl:flex-row justify-center items-center flex-col md:gap-20 xl:gap-20 gap-4">
         <div class="flex flex-col md:gap-4 xl:gap-4 gap-0 md:max-w-1/2 xl:max-w-1/2">
           <h1
-            class="md:text-6xl xl:text-6xl text-4xl font-bold text-[var(---green)] xl:mb-6 md:mb-6 mb-2">
+            class="md:text-6xl xl:text-6xl text-4xl font-bold text-[var(---darkGreen)] xl:mb-6 md:mb-6 mb-2 drop-shadow-2xl drop-shadow-black/70">
             Welcome to BoxMarket.com
           </h1>
           <p class="text-xl text-[var(---darkgreen)] xl:mb-8 md:mb-8 mb-4">
@@ -220,7 +215,7 @@
       </section>
     </header>
     <!-- main section codes -->
-    <main class="flex flex-col gap-10">
+    <main class="flex flex-col gap-10 backdrop-blur-xl bg-white/80">
       <section class="w-full p-10 flex-col gap-6 h-[60vh]" id="products">
         <div class="w-full px-6 py-4 bg-[var(---lightgreen)] rounded-md flex justify-between">
           <span class="text-2xl font-bold">Welcome to BoxMarket.com</span>
